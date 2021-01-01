@@ -52,7 +52,7 @@ class CreateTransactionService {
       category: transactionCategory,
     });
 
-    transactionsRepository.save(transaction);
+    await transactionsRepository.save(transaction);
 
     return transaction;
   }
